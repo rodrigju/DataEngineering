@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.6.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_7b21b56ac684f86695a099195d3808a4 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_7b21b56ac684f86695a099195d3808a4" ></div>
+        
+</body>
+<script>    
+    
+            var map_7b21b56ac684f86695a099195d3808a4 = L.map(
+                "map_7b21b56ac684f86695a099195d3808a4",
+                {
+                    center: [37.7823354052835, -98.64009225291598],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 4.5,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_750b73d796e054ebe826784594a2fedc = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_85b85daf94a30a45b97bdf3617e0a93a = L.circleMarker(
+                [40.44693230923824, -80.01577308870428],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_6734d056354048be5756b050f508320b = L.circleMarker(
+                [39.744013221979294, -105.02016304639947],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_0b0722f7b90e2a93ec403b9a96982905 = L.circleMarker(
+                [47.59533265762146, -122.33165013078006],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_5f1f98c7ded0c7662fac8a8244d7414d = L.circleMarker(
+                [33.95351847748308, -118.3390825177396],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_e01526ea16b7c716864f829fb48c1f3b = L.circleMarker(
+                [33.75543774404388, -84.38929374454919],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_3fd62d32e7cab2afe341696cfc063fa6 = L.circleMarker(
+                [40.81363629955999, -74.07432825615011],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_bbd1d4c06bd5821606ecc8b49ee44b1d = L.circleMarker(
+                [42.34051393951385, -83.04543133862187],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_9d40b8379f6f557750d30902d5c0be1d = L.circleMarker(
+                [44.97376197257462, -93.25707415830927],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_f5720243e4afa98a77d26a327539f2f4 = L.circleMarker(
+                [29.951265494212358, -90.08127638901094],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_8c4c6e7d211396816d142d6051baa87b = L.circleMarker(
+                [38.907853356678245, -76.86450640224577],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_2b43d8649ca569d312cb7bda3ebc129e = L.circleMarker(
+                [38.907853356678245, -76.86450640224577],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_435a60507c5265745d6c01aa0223d89f = L.circleMarker(
+                [38.907853356678245, -76.86450640224577],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_19ff4423e951c154fcacec2ea74bc635 = L.circleMarker(
+                [29.68485237343853, -95.41060011414788],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_4f2f04ec2ef51c41b843c7c2f9de8976 = L.circleMarker(
+                [42.09112093578255, -71.26427140028794],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_c4a7604f0b6e8a40a4423cb374ddccb6 = L.circleMarker(
+                [41.50612579125962, -81.69966611935808],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_0899bea45025b7ffe579a142a5427072 = L.circleMarker(
+                [39.27831977931439, -76.62298335197336],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_cc417c24cae5af1c1c08f17e1848eea1 = L.circleMarker(
+                [27.976068060024257, -82.50338804673174],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_199f872a9b7290236a849547ed1ccd1e = L.circleMarker(
+                [35.22588467069161, -80.8530937460336],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_61f38b019e7f5cab92746b596795a58d = L.circleMarker(
+                [39.09559913178442, -84.51618644827334],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_6444d06ecc6649161a1ce4a516585a70 = L.circleMarker(
+                [32.747861892363176, -97.09268072912208],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_be88d951e32e47463fe7d3fd4e91c8d4 = L.circleMarker(
+                [40.813555099440414, -74.07446773101985],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_b226bc58efed0dda20e45caf954d5cf1 = L.circleMarker(
+                [30.32402101335189, -81.63728532947623],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_c50bb8410a4b0c5d77eba11de9516ca9 = L.circleMarker(
+                [39.760111293066615, -86.16369510106672],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_e28251ce3d9af59b66ddfa1f968f0278 = L.circleMarker(
+                [36.16650496443108, -86.77116105629688],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_27c6482d9cec2e19d08c85cee340acfc = L.circleMarker(
+                [44.501401796437534, -88.06224048856535],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_7c0925b121318af55b60d6197c551214 = L.circleMarker(
+                [36.090648755548465, -115.18317432832855],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_652dabebbc1a3b0d9ecfed6f688b1af3 = L.circleMarker(
+                [33.95348287958675, -118.33891085636145],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_3fa5ede6d9c163101e1a0cd153143415 = L.circleMarker(
+                [39.04885987823436, -94.48390814615142],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_eef507df9f27cf0a66ed55304659fca4 = L.circleMarker(
+                [37.403197160997806, -121.96979582690217],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_4f14cf14a73110b19d24ffb8ba6c2ab4 = L.circleMarker(
+                [25.958014715845987, -80.23874238540012],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_628306f213c19c7fb16f43bbd99a2466 = L.circleMarker(
+                [41.8623691113519, -87.61701026723262],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_94e24767a7e5388c82a49a45a0e48665 = L.circleMarker(
+                [33.527517355469456, -112.26234472568443],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_5ab60fba3eda769c421982768676d9d2 = L.circleMarker(
+                [39.90080979467739, -75.1675215022137],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var circle_marker_31a652bd3ad96e24b1b5f61caccd4003 = L.circleMarker(
+                [42.77383056148336, -78.78710604536877],
+                {"bubblingMouseEvents": true, "color": "#3388ff", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "#3388ff", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10, "stroke": true, "weight": 3}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+            var marker_0617a8d0d49d38cb86815c50f5d0d680 = L.marker(
+                [40.44693230923824, -80.01577308870428],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_3014b743d23b5c42b44722e56b3bb410 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_60138999c0a2d72e19229e32e8a57bab = $(`<div id="html_60138999c0a2d72e19229e32e8a57bab" style="width: 100.0%; height: 100.0%;">Pittsburgh Steelers</div>`)[0];
+                popup_3014b743d23b5c42b44722e56b3bb410.setContent(html_60138999c0a2d72e19229e32e8a57bab);
+            
+        
+
+        marker_0617a8d0d49d38cb86815c50f5d0d680.bindPopup(popup_3014b743d23b5c42b44722e56b3bb410)
+        ;
+
+        
+    
+    
+            var marker_ad2de366b9c34449614dd76444fa3e7b = L.marker(
+                [39.744013221979294, -105.02016304639947],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_62e83f6b257e5a648391974ed8c50b81 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d0edea21ad11c1dc0d253158ef34fd40 = $(`<div id="html_d0edea21ad11c1dc0d253158ef34fd40" style="width: 100.0%; height: 100.0%;">Denver Broncos</div>`)[0];
+                popup_62e83f6b257e5a648391974ed8c50b81.setContent(html_d0edea21ad11c1dc0d253158ef34fd40);
+            
+        
+
+        marker_ad2de366b9c34449614dd76444fa3e7b.bindPopup(popup_62e83f6b257e5a648391974ed8c50b81)
+        ;
+
+        
+    
+    
+            var marker_f4f07505bd65afcbbbdfa23400a4b769 = L.marker(
+                [47.59533265762146, -122.33165013078006],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_981cad3a4aa9d700f893bbfe20c9116a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_64036d73942a4a2c38aac48a2b10b5f1 = $(`<div id="html_64036d73942a4a2c38aac48a2b10b5f1" style="width: 100.0%; height: 100.0%;">Seattle Seahawks</div>`)[0];
+                popup_981cad3a4aa9d700f893bbfe20c9116a.setContent(html_64036d73942a4a2c38aac48a2b10b5f1);
+            
+        
+
+        marker_f4f07505bd65afcbbbdfa23400a4b769.bindPopup(popup_981cad3a4aa9d700f893bbfe20c9116a)
+        ;
+
+        
+    
+    
+            var marker_29bf6bdcaebfe921a5fb4112f0f5e37f = L.marker(
+                [33.95351847748308, -118.3390825177396],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_285284bf1b894e3943ec113c655279ce = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e70d5b68bea62dba8defda24dea0c66f = $(`<div id="html_e70d5b68bea62dba8defda24dea0c66f" style="width: 100.0%; height: 100.0%;">Los Angeles Rams</div>`)[0];
+                popup_285284bf1b894e3943ec113c655279ce.setContent(html_e70d5b68bea62dba8defda24dea0c66f);
+            
+        
+
+        marker_29bf6bdcaebfe921a5fb4112f0f5e37f.bindPopup(popup_285284bf1b894e3943ec113c655279ce)
+        ;
+
+        
+    
+    
+            var marker_3ed239f1a99885ea57a5351d27ca594a = L.marker(
+                [33.75543774404388, -84.38929374454919],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_2daed41690838fd03f59ac6675a38bbe = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_02284adee3d72616f71ad10bccef74b7 = $(`<div id="html_02284adee3d72616f71ad10bccef74b7" style="width: 100.0%; height: 100.0%;">Atlanta Falcons</div>`)[0];
+                popup_2daed41690838fd03f59ac6675a38bbe.setContent(html_02284adee3d72616f71ad10bccef74b7);
+            
+        
+
+        marker_3ed239f1a99885ea57a5351d27ca594a.bindPopup(popup_2daed41690838fd03f59ac6675a38bbe)
+        ;
+
+        
+    
+    
+            var marker_94c680fc3f99ec70eb5f0221f85e45c1 = L.marker(
+                [40.81363629955999, -74.07432825615011],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_7b42e8448fb7b4435fc7f224bf111bda = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4487d02a158c559420d08699a1c31dd3 = $(`<div id="html_4487d02a158c559420d08699a1c31dd3" style="width: 100.0%; height: 100.0%;">New York Jets</div>`)[0];
+                popup_7b42e8448fb7b4435fc7f224bf111bda.setContent(html_4487d02a158c559420d08699a1c31dd3);
+            
+        
+
+        marker_94c680fc3f99ec70eb5f0221f85e45c1.bindPopup(popup_7b42e8448fb7b4435fc7f224bf111bda)
+        ;
+
+        
+    
+    
+            var marker_0d0b00272cf4f5a2ead1e2e24c4537e1 = L.marker(
+                [42.34051393951385, -83.04543133862187],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_261e64f0f09f7135b00fd030ac95764a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39cd137d48c672a3647102580e60ec22 = $(`<div id="html_39cd137d48c672a3647102580e60ec22" style="width: 100.0%; height: 100.0%;">Detroit Lions</div>`)[0];
+                popup_261e64f0f09f7135b00fd030ac95764a.setContent(html_39cd137d48c672a3647102580e60ec22);
+            
+        
+
+        marker_0d0b00272cf4f5a2ead1e2e24c4537e1.bindPopup(popup_261e64f0f09f7135b00fd030ac95764a)
+        ;
+
+        
+    
+    
+            var marker_73bba41c071e689057f1c4bca4c7afa1 = L.marker(
+                [44.97376197257462, -93.25707415830927],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_bd75a202b0067aba6a7bd6760f381021 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_841406344f25fe303b94bdf445360aa5 = $(`<div id="html_841406344f25fe303b94bdf445360aa5" style="width: 100.0%; height: 100.0%;">Minnesota Vikings</div>`)[0];
+                popup_bd75a202b0067aba6a7bd6760f381021.setContent(html_841406344f25fe303b94bdf445360aa5);
+            
+        
+
+        marker_73bba41c071e689057f1c4bca4c7afa1.bindPopup(popup_bd75a202b0067aba6a7bd6760f381021)
+        ;
+
+        
+    
+    
+            var marker_0c5659cf41fa74f6874acf6385997e0f = L.marker(
+                [29.951265494212358, -90.08127638901094],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_69cb66793ebdaa37adae46f6357be525 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f89cb8f7ff390f6d50056f3ed95a2d79 = $(`<div id="html_f89cb8f7ff390f6d50056f3ed95a2d79" style="width: 100.0%; height: 100.0%;">New Orleans Saints</div>`)[0];
+                popup_69cb66793ebdaa37adae46f6357be525.setContent(html_f89cb8f7ff390f6d50056f3ed95a2d79);
+            
+        
+
+        marker_0c5659cf41fa74f6874acf6385997e0f.bindPopup(popup_69cb66793ebdaa37adae46f6357be525)
+        ;
+
+        
+    
+    
+            var marker_f5ce3cdedea1443643debc84804eeea3 = L.marker(
+                [38.907853356678245, -76.86450640224577],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_44b239050b031cb1d52f55a34756d489 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9ce117babdda9ac6d2ffd9496b2223f6 = $(`<div id="html_9ce117babdda9ac6d2ffd9496b2223f6" style="width: 100.0%; height: 100.0%;">Washington Redskins</div>`)[0];
+                popup_44b239050b031cb1d52f55a34756d489.setContent(html_9ce117babdda9ac6d2ffd9496b2223f6);
+            
+        
+
+        marker_f5ce3cdedea1443643debc84804eeea3.bindPopup(popup_44b239050b031cb1d52f55a34756d489)
+        ;
+
+        
+    
+    
+            var marker_af5e157549d64f2847db07e8be842e4b = L.marker(
+                [38.907853356678245, -76.86450640224577],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_0962749fa20c5b2fd2a9fe01cd4a9a76 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6995e5afd2c0d2c495e8dd6f2c0edb72 = $(`<div id="html_6995e5afd2c0d2c495e8dd6f2c0edb72" style="width: 100.0%; height: 100.0%;">Washington Football Team</div>`)[0];
+                popup_0962749fa20c5b2fd2a9fe01cd4a9a76.setContent(html_6995e5afd2c0d2c495e8dd6f2c0edb72);
+            
+        
+
+        marker_af5e157549d64f2847db07e8be842e4b.bindPopup(popup_0962749fa20c5b2fd2a9fe01cd4a9a76)
+        ;
+
+        
+    
+    
+            var marker_5412aab1b78db3ae7844e78810a41138 = L.marker(
+                [38.907853356678245, -76.86450640224577],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_82c1883671f61f5eb02f13a51db17025 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae281df1329171881c874b97c38f3fcd = $(`<div id="html_ae281df1329171881c874b97c38f3fcd" style="width: 100.0%; height: 100.0%;">Washington Commanders</div>`)[0];
+                popup_82c1883671f61f5eb02f13a51db17025.setContent(html_ae281df1329171881c874b97c38f3fcd);
+            
+        
+
+        marker_5412aab1b78db3ae7844e78810a41138.bindPopup(popup_82c1883671f61f5eb02f13a51db17025)
+        ;
+
+        
+    
+    
+            var marker_be965eb7012314dec02acc4857da423e = L.marker(
+                [29.68485237343853, -95.41060011414788],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_8237378ff481d6cbc77139cec2dbc2db = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_306d642c09db55274cf1f94bd0f6dee9 = $(`<div id="html_306d642c09db55274cf1f94bd0f6dee9" style="width: 100.0%; height: 100.0%;">Houston Texans</div>`)[0];
+                popup_8237378ff481d6cbc77139cec2dbc2db.setContent(html_306d642c09db55274cf1f94bd0f6dee9);
+            
+        
+
+        marker_be965eb7012314dec02acc4857da423e.bindPopup(popup_8237378ff481d6cbc77139cec2dbc2db)
+        ;
+
+        
+    
+    
+            var marker_9da24eb1c4648752727a1cca3177dbd1 = L.marker(
+                [42.09112093578255, -71.26427140028794],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_a27c252b2c6a411bbe31d643fd7f7c47 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0ad4f5456569f306054339505e9ba786 = $(`<div id="html_0ad4f5456569f306054339505e9ba786" style="width: 100.0%; height: 100.0%;">New England Patriots</div>`)[0];
+                popup_a27c252b2c6a411bbe31d643fd7f7c47.setContent(html_0ad4f5456569f306054339505e9ba786);
+            
+        
+
+        marker_9da24eb1c4648752727a1cca3177dbd1.bindPopup(popup_a27c252b2c6a411bbe31d643fd7f7c47)
+        ;
+
+        
+    
+    
+            var marker_d47649f101fe32fe3d7c878b275301cc = L.marker(
+                [41.50612579125962, -81.69966611935808],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_79f1b5b8b83bdee0b716bd9fe7ee4972 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_faa4c725c7caf33e3f91e209606d8228 = $(`<div id="html_faa4c725c7caf33e3f91e209606d8228" style="width: 100.0%; height: 100.0%;">Cleveland Browns</div>`)[0];
+                popup_79f1b5b8b83bdee0b716bd9fe7ee4972.setContent(html_faa4c725c7caf33e3f91e209606d8228);
+            
+        
+
+        marker_d47649f101fe32fe3d7c878b275301cc.bindPopup(popup_79f1b5b8b83bdee0b716bd9fe7ee4972)
+        ;
+
+        
+    
+    
+            var marker_8b344ee5da30b57611da5488f6ee8097 = L.marker(
+                [39.27831977931439, -76.62298335197336],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_520d1e2125dd7e03c24f8cdca3962c2f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0c328e04dac216a85ee208cd1c346c39 = $(`<div id="html_0c328e04dac216a85ee208cd1c346c39" style="width: 100.0%; height: 100.0%;">Baltimore Ravens</div>`)[0];
+                popup_520d1e2125dd7e03c24f8cdca3962c2f.setContent(html_0c328e04dac216a85ee208cd1c346c39);
+            
+        
+
+        marker_8b344ee5da30b57611da5488f6ee8097.bindPopup(popup_520d1e2125dd7e03c24f8cdca3962c2f)
+        ;
+
+        
+    
+    
+            var marker_0266d7f2621b58551f320ca9bc3b1dcf = L.marker(
+                [27.976068060024257, -82.50338804673174],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_d6d62ad29274b30f52328e3c82bb3a50 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_42af04a39a5a63cd02df6cce3225d4ca = $(`<div id="html_42af04a39a5a63cd02df6cce3225d4ca" style="width: 100.0%; height: 100.0%;">Tampa Bay Buccaneers</div>`)[0];
+                popup_d6d62ad29274b30f52328e3c82bb3a50.setContent(html_42af04a39a5a63cd02df6cce3225d4ca);
+            
+        
+
+        marker_0266d7f2621b58551f320ca9bc3b1dcf.bindPopup(popup_d6d62ad29274b30f52328e3c82bb3a50)
+        ;
+
+        
+    
+    
+            var marker_79d970d4dc9251fb5eadb57513a7d819 = L.marker(
+                [35.22588467069161, -80.8530937460336],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_a99e86afa97e48998765f13dfb290593 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_05948150a46366f70e2712979686ebbd = $(`<div id="html_05948150a46366f70e2712979686ebbd" style="width: 100.0%; height: 100.0%;">Carolina Panthers</div>`)[0];
+                popup_a99e86afa97e48998765f13dfb290593.setContent(html_05948150a46366f70e2712979686ebbd);
+            
+        
+
+        marker_79d970d4dc9251fb5eadb57513a7d819.bindPopup(popup_a99e86afa97e48998765f13dfb290593)
+        ;
+
+        
+    
+    
+            var marker_3c9fc59fa226e87198781a5b6c141205 = L.marker(
+                [39.09559913178442, -84.51618644827334],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_3ccb572d3f0ade65604740b0d012e5b7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ccc27a590aec744006ac256a2bd36aab = $(`<div id="html_ccc27a590aec744006ac256a2bd36aab" style="width: 100.0%; height: 100.0%;">Cincinnati Bengals</div>`)[0];
+                popup_3ccb572d3f0ade65604740b0d012e5b7.setContent(html_ccc27a590aec744006ac256a2bd36aab);
+            
+        
+
+        marker_3c9fc59fa226e87198781a5b6c141205.bindPopup(popup_3ccb572d3f0ade65604740b0d012e5b7)
+        ;
+
+        
+    
+    
+            var marker_d8cb1b55d204aa0d1c4de15384bf5ff8 = L.marker(
+                [32.747861892363176, -97.09268072912208],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_636d7490ec71642b9c3ad8cd5591adc7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_dfe4b8ffa735e4172bdf99326298d475 = $(`<div id="html_dfe4b8ffa735e4172bdf99326298d475" style="width: 100.0%; height: 100.0%;">Dallas Cowboys</div>`)[0];
+                popup_636d7490ec71642b9c3ad8cd5591adc7.setContent(html_dfe4b8ffa735e4172bdf99326298d475);
+            
+        
+
+        marker_d8cb1b55d204aa0d1c4de15384bf5ff8.bindPopup(popup_636d7490ec71642b9c3ad8cd5591adc7)
+        ;
+
+        
+    
+    
+            var marker_201e3b3f6ee074e18cbf514ac09758e0 = L.marker(
+                [40.813555099440414, -74.07446773101985],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_ad21b97b6af29a7f1091612a5187d9c1 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d2ce30b5087246dbb5837de811c3b5c7 = $(`<div id="html_d2ce30b5087246dbb5837de811c3b5c7" style="width: 100.0%; height: 100.0%;">New York Giants</div>`)[0];
+                popup_ad21b97b6af29a7f1091612a5187d9c1.setContent(html_d2ce30b5087246dbb5837de811c3b5c7);
+            
+        
+
+        marker_201e3b3f6ee074e18cbf514ac09758e0.bindPopup(popup_ad21b97b6af29a7f1091612a5187d9c1)
+        ;
+
+        
+    
+    
+            var marker_6324fb04e89a9201f8a7b3998c70599a = L.marker(
+                [30.32402101335189, -81.63728532947623],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_f49a98daab3f4aac9b225c13603250e8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f9f45157e9b21816ee1bdc99c7d5d575 = $(`<div id="html_f9f45157e9b21816ee1bdc99c7d5d575" style="width: 100.0%; height: 100.0%;">Jacksonville Jaguars</div>`)[0];
+                popup_f49a98daab3f4aac9b225c13603250e8.setContent(html_f9f45157e9b21816ee1bdc99c7d5d575);
+            
+        
+
+        marker_6324fb04e89a9201f8a7b3998c70599a.bindPopup(popup_f49a98daab3f4aac9b225c13603250e8)
+        ;
+
+        
+    
+    
+            var marker_6c6f5f8a1e4ad5ec8999767f9d58ea90 = L.marker(
+                [39.760111293066615, -86.16369510106672],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_ed34d38499885e4730da933dbb499bc0 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fe80157221f5faa73ad83e163183c413 = $(`<div id="html_fe80157221f5faa73ad83e163183c413" style="width: 100.0%; height: 100.0%;">Indianapolis Colts</div>`)[0];
+                popup_ed34d38499885e4730da933dbb499bc0.setContent(html_fe80157221f5faa73ad83e163183c413);
+            
+        
+
+        marker_6c6f5f8a1e4ad5ec8999767f9d58ea90.bindPopup(popup_ed34d38499885e4730da933dbb499bc0)
+        ;
+
+        
+    
+    
+            var marker_c148ca7b716e302afd731f24b35561ba = L.marker(
+                [36.16650496443108, -86.77116105629688],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_16fb6ae4550aca8c4f2f9623cf941421 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_587202a98dc485a1de27ed4c5f0a63d8 = $(`<div id="html_587202a98dc485a1de27ed4c5f0a63d8" style="width: 100.0%; height: 100.0%;">Tennessee Titans</div>`)[0];
+                popup_16fb6ae4550aca8c4f2f9623cf941421.setContent(html_587202a98dc485a1de27ed4c5f0a63d8);
+            
+        
+
+        marker_c148ca7b716e302afd731f24b35561ba.bindPopup(popup_16fb6ae4550aca8c4f2f9623cf941421)
+        ;
+
+        
+    
+    
+            var marker_6faa82929d4302c5787e7013adbe3b11 = L.marker(
+                [44.501401796437534, -88.06224048856535],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_918aeda4ebfae7c9af9ed029de8b110b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1e1fe3b71d341742a0699da74bbcd3c3 = $(`<div id="html_1e1fe3b71d341742a0699da74bbcd3c3" style="width: 100.0%; height: 100.0%;">Green Bay Packers</div>`)[0];
+                popup_918aeda4ebfae7c9af9ed029de8b110b.setContent(html_1e1fe3b71d341742a0699da74bbcd3c3);
+            
+        
+
+        marker_6faa82929d4302c5787e7013adbe3b11.bindPopup(popup_918aeda4ebfae7c9af9ed029de8b110b)
+        ;
+
+        
+    
+    
+            var marker_521237ff6fa34970b33ad51a99c5ec05 = L.marker(
+                [36.090648755548465, -115.18317432832855],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_ecfbae411bf6f7aa6bae74ee3b886ac4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5583b30f7e7b7bfe60ed93dac7245d09 = $(`<div id="html_5583b30f7e7b7bfe60ed93dac7245d09" style="width: 100.0%; height: 100.0%;">Las Vegas Raiders</div>`)[0];
+                popup_ecfbae411bf6f7aa6bae74ee3b886ac4.setContent(html_5583b30f7e7b7bfe60ed93dac7245d09);
+            
+        
+
+        marker_521237ff6fa34970b33ad51a99c5ec05.bindPopup(popup_ecfbae411bf6f7aa6bae74ee3b886ac4)
+        ;
+
+        
+    
+    
+            var marker_7d0019239bd91ef7d5c9120adcfd2fce = L.marker(
+                [33.95348287958675, -118.33891085636145],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_058ef47dd0db78f5f231335222021f44 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_68b74aff5e3fdd9d7853b0a14fa63e01 = $(`<div id="html_68b74aff5e3fdd9d7853b0a14fa63e01" style="width: 100.0%; height: 100.0%;">Los Angeles Chargers</div>`)[0];
+                popup_058ef47dd0db78f5f231335222021f44.setContent(html_68b74aff5e3fdd9d7853b0a14fa63e01);
+            
+        
+
+        marker_7d0019239bd91ef7d5c9120adcfd2fce.bindPopup(popup_058ef47dd0db78f5f231335222021f44)
+        ;
+
+        
+    
+    
+            var marker_b6d3096e29233b87918769172c9f845d = L.marker(
+                [39.04885987823436, -94.48390814615142],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_17c811bdae905756e52f3bae0fd4a27f = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b92dea1b67ae71aaaa7c0eeeb34cdeed = $(`<div id="html_b92dea1b67ae71aaaa7c0eeeb34cdeed" style="width: 100.0%; height: 100.0%;">Kansas City Chiefs</div>`)[0];
+                popup_17c811bdae905756e52f3bae0fd4a27f.setContent(html_b92dea1b67ae71aaaa7c0eeeb34cdeed);
+            
+        
+
+        marker_b6d3096e29233b87918769172c9f845d.bindPopup(popup_17c811bdae905756e52f3bae0fd4a27f)
+        ;
+
+        
+    
+    
+            var marker_6ded59ff2caa7cddffbf8d9a03069652 = L.marker(
+                [37.403197160997806, -121.96979582690217],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_b3eedba759fc727455f4b0afdbf32ecf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_13d79884973b796ecbec1d10d6880e4f = $(`<div id="html_13d79884973b796ecbec1d10d6880e4f" style="width: 100.0%; height: 100.0%;">San Francisco 49ers</div>`)[0];
+                popup_b3eedba759fc727455f4b0afdbf32ecf.setContent(html_13d79884973b796ecbec1d10d6880e4f);
+            
+        
+
+        marker_6ded59ff2caa7cddffbf8d9a03069652.bindPopup(popup_b3eedba759fc727455f4b0afdbf32ecf)
+        ;
+
+        
+    
+    
+            var marker_16ba4a9b35222a9128ea26418930ce01 = L.marker(
+                [25.958014715845987, -80.23874238540012],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_0687b7f70464e2600bc0f151621a6a75 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_cd2e02658972ed7d48a3faf904866621 = $(`<div id="html_cd2e02658972ed7d48a3faf904866621" style="width: 100.0%; height: 100.0%;">Miami Dolphins</div>`)[0];
+                popup_0687b7f70464e2600bc0f151621a6a75.setContent(html_cd2e02658972ed7d48a3faf904866621);
+            
+        
+
+        marker_16ba4a9b35222a9128ea26418930ce01.bindPopup(popup_0687b7f70464e2600bc0f151621a6a75)
+        ;
+
+        
+    
+    
+            var marker_1da4ee7fbb243081dad25ec21fa4bbe6 = L.marker(
+                [41.8623691113519, -87.61701026723262],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_37cb7702a5a60d2302c3e87a65088494 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5b9efcf3ee1088f12b9667b84feec025 = $(`<div id="html_5b9efcf3ee1088f12b9667b84feec025" style="width: 100.0%; height: 100.0%;">Chicago Bears</div>`)[0];
+                popup_37cb7702a5a60d2302c3e87a65088494.setContent(html_5b9efcf3ee1088f12b9667b84feec025);
+            
+        
+
+        marker_1da4ee7fbb243081dad25ec21fa4bbe6.bindPopup(popup_37cb7702a5a60d2302c3e87a65088494)
+        ;
+
+        
+    
+    
+            var marker_7902dcf2a330141f0687ead1312525e3 = L.marker(
+                [33.527517355469456, -112.26234472568443],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_d5119f30feb506202664493d915f7bcf = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4af5858fb99699a98a3e4a89522b6214 = $(`<div id="html_4af5858fb99699a98a3e4a89522b6214" style="width: 100.0%; height: 100.0%;">Arizona Cardinals</div>`)[0];
+                popup_d5119f30feb506202664493d915f7bcf.setContent(html_4af5858fb99699a98a3e4a89522b6214);
+            
+        
+
+        marker_7902dcf2a330141f0687ead1312525e3.bindPopup(popup_d5119f30feb506202664493d915f7bcf)
+        ;
+
+        
+    
+    
+            var marker_5b948ab844ac0047a4371d2e54e0ccab = L.marker(
+                [39.90080979467739, -75.1675215022137],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_e7051512593a01af372f68277080e383 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8db8a1c046b7fcc66206caf672a88154 = $(`<div id="html_8db8a1c046b7fcc66206caf672a88154" style="width: 100.0%; height: 100.0%;">Philadelphia Eagles</div>`)[0];
+                popup_e7051512593a01af372f68277080e383.setContent(html_8db8a1c046b7fcc66206caf672a88154);
+            
+        
+
+        marker_5b948ab844ac0047a4371d2e54e0ccab.bindPopup(popup_e7051512593a01af372f68277080e383)
+        ;
+
+        
+    
+    
+            var marker_f39a99f047759494fa98e83b0ff1d8f6 = L.marker(
+                [42.77383056148336, -78.78710604536877],
+                {}
+            ).addTo(map_7b21b56ac684f86695a099195d3808a4);
+        
+    
+        var popup_c01aa2ba32dd1a2d7335a571c204ab4b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_2dfad446e2ea662d05d3218ae6986b72 = $(`<div id="html_2dfad446e2ea662d05d3218ae6986b72" style="width: 100.0%; height: 100.0%;">Buffalo Bills</div>`)[0];
+                popup_c01aa2ba32dd1a2d7335a571c204ab4b.setContent(html_2dfad446e2ea662d05d3218ae6986b72);
+            
+        
+
+        marker_f39a99f047759494fa98e83b0ff1d8f6.bindPopup(popup_c01aa2ba32dd1a2d7335a571c204ab4b)
+        ;
+
+        
+    
+</script>
